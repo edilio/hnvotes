@@ -22,14 +22,14 @@ MINUTES_TO_WAIT_BEFORE_TERMINATE_INSTANCES = int(os.environ.get('MINUTES_TO_WAIT
 
 
 amis_per_regions = {
-    # 'ap-northeast-1': 'ami-e5be98e4',
+    'ap-northeast-1': 'ami-e5be98e4',
     'ap-southeast-1': 'ami-96fda7c4',
-    # 'eu-west-1':      'ami-84f129f3',
-    # 'sa-east-1':      'ami-5fbb1042',
-    # 'us-east-1':      'ami-d017b2b8',
-    # 'us-west-1':      'ami-1fe6e95a',
-    # 'ap-southeast-2': 'ami-4f274775',
-    # 'us-west-2':      'ami-d9a1e6e9'
+    'eu-west-1':      'ami-84f129f3',
+    'sa-east-1':      'ami-5fbb1042',
+    'us-east-1':      'ami-d017b2b8',
+    'us-west-1':      'ami-1fe6e95a',
+    'ap-southeast-2': 'ami-4f274775',
+    'us-west-2':      'ami-d9a1e6e9'
 }
 
 
