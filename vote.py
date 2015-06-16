@@ -39,7 +39,8 @@ wget https://bootstrap.pypa.io/get-pip.py
 sudo python get-pip.py
 sudo pip install requests
 
-sudo python -c '
+echo '
+#!/usr/bin/env python
 
 ITEM = "%(ITEM)s"
 
@@ -51,9 +52,6 @@ from urllib import urlencode
 
 
 USER_AGENT = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.124 Safari/537.36"
-
-HOME = os.environ.get('HOME')
-SSH_PATH = os.path.join(HOME, '.ssh')
 
 
 def id_generator(size=8, chars=string.ascii_uppercase + string.digits):
@@ -90,7 +88,9 @@ def vote(item):
         print r.content
 
 vote(ITEM)
-'
+' > /home/ubuntu/vote.py
+
+sudo python /home/ubuntu/vote.py > /tmp/vote.log
 """
 
 
